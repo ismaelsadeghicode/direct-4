@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.23.132:1521:topdb
+    username: topup_scm
+    password: randd
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  application:
+    name: com.dml.topup
